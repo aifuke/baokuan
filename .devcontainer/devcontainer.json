@@ -1,0 +1,12 @@
+{
+    "name": "爆款视频反推复刻工具",
+    "image": "mcr.microsoft.com/devcontainers/python:3.12",
+    "postCreateCommand": "pip install -r requirements.txt && python app.py",
+    "portsAttributes": {
+        "8765": {
+            "label": "Web UI",
+            "onAutoForward": "openBrowser"
+        }
+    },
+    "forwardPorts": [8765]
+}
